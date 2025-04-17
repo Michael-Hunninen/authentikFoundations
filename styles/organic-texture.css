@@ -1,0 +1,99 @@
+.organic-texture {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+.organic-texture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3d2e25;
+  opacity: 0.05;
+}
+
+.organic-texture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise1'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0.24 0 0 0 0, 0 0.18 0 0 0, 0 0 0.15 0 0, 0 0 0 0.3 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise1)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise2'%3E%3CfeTurbulence type='turbulence' baseFrequency='0.7' numOctaves='4' seed='5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0.24 0 0 0 0, 0 0.18 0 0 0, 0 0 0.15 0 0, 0 0 0 0.25 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise2)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise3'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.4' numOctaves='3' seed='10' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0.24 0 0 0 0, 0 0.18 0 0 0, 0 0 0.15 0 0, 0 0 0 0.35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise3)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 150 150' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise4'%3E%3CfeTurbulence type='turbulence' baseFrequency='1.2' numOctaves='2' seed='15' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0.24 0 0 0 0, 0 0.18 0 0 0, 0 0 0.15 0 0, 0 0 0 0.2 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise4)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise5'%3E%3CfeTurbulence type='turbulence' baseFrequency='1.5' numOctaves='6' seed='20' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0.24 0 0 0 0, 0 0.18 0 0 0, 0 0 0.15 0 0, 0 0 0 0.15 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise5)'/%3E%3C/svg%3E");
+  background-size: 100px 100px, 200px 200px, 300px 300px, 150px 150px, 50px 50px;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+  filter: contrast(1.1) brightness(1.05);
+  pointer-events: none;
+}
+
+/* Enhanced luxury styles */
+.luxury-gradient {
+  background: linear-gradient(135deg, rgba(61, 46, 37, 0.9) 0%, rgba(45, 40, 40, 0.95) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.luxury-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(97, 50, 38, 0.3) 0%, transparent 70%);
+  z-index: 1;
+}
+
+.luxury-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(215, 184, 153, 0.05) 0%, transparent 100%);
+  z-index: 2;
+}
+
+.luxury-card {
+  background: rgba(61, 46, 37, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(202, 172, 142, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.luxury-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(202, 172, 142, 0.4);
+}
+
+.luxury-text {
+  background: linear-gradient(to right, #fffff0, #d7b899, #fffff0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.luxury-button {
+  background: linear-gradient(to right, #613226, #b37654);
+  border: none;
+  box-shadow: 0 4px 15px rgba(97, 50, 38, 0.3);
+  transition: all 0.3s ease;
+}
+
+.luxury-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(97, 50, 38, 0.4);
+} 
